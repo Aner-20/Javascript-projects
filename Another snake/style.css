@@ -1,0 +1,43 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #00b159;
+}
+
+
+canvas{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+button{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    width: 15%;
+    color: #f37735;
+    background-color: #008744;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px black;
+    border-radius: .5em;
+    transition: 225ms ease-in-out;
+}
+
+button:hover{
+    transform: translateY(-10px);
+}

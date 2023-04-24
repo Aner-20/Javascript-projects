@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    position: relative;
+    padding: 100px 50px;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 70px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollTop.active{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.arrow{
+    z-index: 1;
+    transform: translateY(50%);
+    font-size: 1.8rem;
+    transform: translateX(35%);
+    position: absolute;
+    top: 10px;
+    left: 18px;
+}
+

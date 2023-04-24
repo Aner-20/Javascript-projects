@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 10vh;
+    gap: .5rem;
+}
+
+
+.box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+input{
+    width: 200px;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+    margin-top: .8rem;
+    border: 3px solid black;
+    padding: 10px 20px;
+}
+
+.card{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+

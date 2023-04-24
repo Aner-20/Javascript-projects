@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-size: 22px;
+}
+
+
+.header{
+    background-color: #333;
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    gap: 1rem;
+}
+
+
+.link{
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown.active > .link, .link:hover{
+    color: lightskyblue;
+}
+
+
+.dropdown{
+    position: relative;
+
+}
+
+
+.dropdown-menu{   /* display block and none don't allow any sort of animation */
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem); /* to space out information and its contents: calc(100% + unit used to space)*/
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease-in-out, transform 150ms  ease-in-out;  /* it only animates opacity and transform */
+    transform: translateY(-10px);
+}
+
+
+
+
+.dropdown.active > .link  + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);   /* this line is foundational to bestow a good animation */
+    pointer-events: auto;
+
+
+}
+
+.dropdown-heading{
+    color: gray;
+}
+
+
+.information-grid{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+
+.dropdown-links{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem
+}
+
+
+.login-form > input{
+    margin-bottom: .5rem;
+}

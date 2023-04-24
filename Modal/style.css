@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.btnBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.openModal{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    border-radius: 1em;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 18px;
+    transition: 100ms ease-in-out;
+}
+
+.openModal:hover{
+    border: 1px solid black;
+}
+
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+    border: 1px solid black;
+    width: 300px;
+    background-color: white;
+    border-radius: .4em;
+    font-size: 1.1rem;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid black;
+
+}
+
+
+.close-modal{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: #fff;
+    color: red;
+
+}
+
+.modal-body{
+    padding: 12px;
+    line-height: 1.9rem;
+    word-wrap: break-word;
+}
+
+
+.overlay{
+    position: fixed;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .5);
+    pointer-events: none;
+}
+
+.overlay.active{
+    pointer-events: auto;
+    opacity: 1;
+}

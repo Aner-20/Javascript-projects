@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.gameBox{
+    width: 530px;
+    height: 300px;
+    border: 1px solid black;
+    /*border-radius: 0.5em;*/
+    position: absolute;
+}
+
+
+.block{
+    width: 80px;
+    height: 25px;
+    background-color: red;
+    position: absolute;
+
+}
+
+.player{
+    width: 80px;
+    height: 25px;
+    background-color: green;
+    position: absolute;
+}
+
+.ball{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /*transform: scale(1.2);*/
+    border-radius: 10px;
+    background-color: blue;
+}

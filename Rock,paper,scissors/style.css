@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Josefin+Sans:ital,wght@0,500;1,500&family=Lato:ital@1&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    
+}
+
+#gameBox{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #7f8fa6;
+    padding: 2.7rem;
+    border-radius: 12%;
+    border: 1px solid black;
+    /*position: absolute;*/
+}
+
+#gameTitle{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+#round{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.9rem;
+    visibility: hidden;
+}
+
+#imageGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 1rem;
+}
+
+#rock{
+    visibility: hidden;
+    cursor: pointer;
+    transition: 350ms ease-in-out;
+    
+}
+
+#rock:hover{
+    transform: scale(1.2);
+}
+
+#paper{
+    visibility: hidden;
+    cursor: pointer;
+    transition: 350ms ease-in-out;
+    width: 85px;
+}
+
+#paper:hover{
+    transform: scale(1.2);
+}
+
+#scissors{
+    visibility: hidden;
+    cursor: pointer;
+    transition: 350ms ease-in-out;
+    width: 85px;
+}
+
+#scissors:hover{
+    transform: scale(1.2);
+}
+
+
+#startBtn{
+    width: 200px;
+    position: relative;
+    left: 57px;
+    padding: 0.4rem;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 12%;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    position: relative;
+    top: -30px;
+}
+
+#startBtn:hover{
+    color: #7f8fa6;
+    transform: translateY(-7px);
+}
+
+#startBtn:active{
+    background-color: black;
+    transition: 100ms, ease;
+}
+
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, 0.50fr);
+    gap: 1rem;
+}
+
+#mode{
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    visibility: hidden;
+}
+
+.modeBtn{
+    padding: 0.3rem;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    border-radius: 12%;
+    visibility: hidden;
+}
+
+#easyBtn{
+    transition: 325ms ease-in-out;
+}
+
+
+
+#easyBtn:hover{
+    background-color: #4cd137;
+    transform: translateY(-7px);
+}
+
+#mediumBtn{
+    transition: 325ms ease-in-out;
+}
+
+#mediumBtn:hover{
+    background-color: #fbc531;
+    transform: translateY(-7px);
+}
+
+#hardBtn{
+    transition: 325ms ease-in-out;
+}
+
+#hardBtn:hover{
+    background-color: #c23616;
+    transform: translateY(-7px);
+}

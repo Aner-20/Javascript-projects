@@ -1,0 +1,83 @@
+*{
+    color: #FDF5EA;
+    font-family: monospace;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+
+}
+
+.gameStructure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+h1{
+    font-size: 3.8rem;
+    margin-top: 5px;
+}
+
+.gameTable{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem 4rem;
+    margin-top: -20px;
+}
+
+
+button{
+    background-color: #333;
+    font-size: 22px;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #FDF5EA;
+    color: #444;
+}
+
+.preventAnotherStart{
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.gameBox{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+    height: 300px;
+    margin-top: 3rem;
+    margin-left: -2rem;
+    gap: 1rem;
+}
+
+.slot{
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: #FDF5EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mole{
+    background-size: cover; /* is foundational to generate the mole */
+    background-image: url('Mole.png');
+}
+
+
+.active{
+    border: 3px solid black;
+}
+

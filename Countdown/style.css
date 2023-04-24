@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Josefin+Sans:ital,wght@0,500;1,500&family=Lato:ital,wght@0,700;1,400&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0EACE2;
+    font-family: 'Lato', sans-serif;
+    transition: 325ms ease-in-out;
+    
+}
+
+#position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#flex{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#time{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1rem;
+    
+}
+
+
+#inner-flex{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #035775;
+    color: #FFFFFF;
+    border-radius: 5%;
+    
+}
+
+#inner-flex > .num{
+    border: 1px solid black;
+    text-align: center;
+    background-color: #013042;
+    border-radius: 4%;
+}
+
+
+#count{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: .3rem;
+}
+
+
+span{
+    text-align: center;
+}

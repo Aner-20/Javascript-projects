@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div{
+    font-size: 5rem;
+    letter-spacing: .7rem;
+    transition: 0.5s ease-in-out;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    div{
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    div{
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Josefin+Sans:ital,wght@0,500;1,500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1E242B;
+    color: #FFC745;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#boxGame{
+    display: flex;
+    flex-direction: column;
+    gap: 1.50rem;
+}
+
+#titleGame{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#rules{
+    font-size: 1.4rem;
+}
+
+#time{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#mistake{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#previousAttempt{
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+#startBtn{
+    width: 150px;
+    position: relative;
+    left: 10.50rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #FFC745;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+    border: 3px solid #000000;
+}
+
+#startBtn:hover{
+    transform: translateY(-10px);
+    border-color: #FFC745;
+    border-radius: 15%;
+}
+
+#startBtn:active{
+    background-color: #1E242B;
+    transition: 100ms ease;
+}
+
+#guessEntry{
+    width: 145px;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    left: 10.4rem;
+    background-color: #000000;
+    color: #FFC745;
+    border-radius: 10%;
+    visibility: hidden;
+}
+
+
+#checkAnswer{
+    width: 150px;
+    position: relative;
+    left: 10.50rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #FFC745;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+    border: 3px solid #000000;
+    visibility: hidden;
+}
+
+#checkAnswer:hover{
+    transform: translateY(-7px);
+    border-radius: 15%;
+    border-color: #FFC745;
+}
+
+#checkAnswer:active{
+    background-color: #1E242B;
+    transition: 100ms ease;
+}
+
+#showError{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#result{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#guesses{
+    text-align: center;
+    font-size: 1.3rem;
+}

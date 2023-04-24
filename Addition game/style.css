@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Josefin+Sans:wght@500&family=Rubik:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   /* background-color: black;*/
+   
+}
+
+.container{
+    display: flex; 
+}
+
+.inner-container{
+    background-color: red;
+    width: 600px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+#esayMode{
+    position: relative;
+    top: 2rem;
+}
+
+
+#firstNum{
+    font-size: 2.5rem;
+}
+
+#operator{
+    font-size: 2.5rem;
+}
+
+#secondNum{
+    font-size: 2.5rem;
+}
+
+#equalOperator{
+    font-size: 2.5rem;
+}
+
+#checkResult{
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    background-color: gold;
+    border-radius: 10%;
+}
+
+#sum{
+   font-size: 20px;
+   text-align: center;
+}
+    

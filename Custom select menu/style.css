@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #4285f4;
+
+}
+
+.wrapper{
+    width: 370px;
+    margin: 130px auto 0;
+
+}
+
+
+.select-btn, .options li{   /*another way to take away the dot */
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.select-btn{
+    height: 65px;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-btn i{
+    font-size: 31px;
+    transition: transform 0.3s linear;
+}
+
+
+.wrapper.active .select-btn i{
+    transform: rotate(-180deg);
+
+}
+
+.content{
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 7px;
+    display: none;
+}
+
+
+.wrapper.active .content{
+    display: block;
+}
+
+
+.content .search{
+    position: relative;
+}
+
+
+.search i {
+    position: absolute;
+    left: 15px;
+    line-height: 53px;
+    color: #999;
+    font-size: 20px;
+
+}
+.search input{
+    height: 53px;
+    width: 80%;
+    font-size: 17px;
+    padding: 0 15px 0 43px;
+    outline: none;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+}
+
+.content .options{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.options::-webkit-scrollbar{
+    width: 7px;
+
+}
+
+.options::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+    border-radius: 25px;
+}
+
+.options li{
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 13px;
+    font-size: 21px;
+
+}
+
+.options li:hover, li.selected{
+    background: #f2f2f2;
+
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akshar:wght@500&family=Josefin+Sans:ital,wght@0,500;1,500&family=Lato:ital,wght@0,700;1,400&family=Monoton&family=Open+Sans&family=Orbitron:wght@500&family=Roboto+Slab&family=Twinkle+Star&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #18dcff;
+}
+
+
+.content{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.num{
+    font-size: 4rem;
+    color: #1B1464;
+    border: 3px solid #000;
+    background-color: #fff;
+    padding: 10px 20px 10px;
+    border-radius: 10px;
+}
+
+
+button{
+    font-size: 4rem;
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: #1B1464;
+    outline: none;
+    background-color: rgba(52, 231, 228, 0);
+    cursor: pointer;
+    border: none;
+    
+}
+
+button:active.active{
+    transform: scale(1.3);
+    
+}
+
+
+
+

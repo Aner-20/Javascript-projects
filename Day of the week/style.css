@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+}
+
+#position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#flex{
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+
+
+
+#day{
+    text-align: center;
+}
+
